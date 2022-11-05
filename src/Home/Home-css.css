@@ -1,0 +1,215 @@
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.hostipleContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 0 10px;
+}
+.hostipleContainer header {
+  display: flex;
+  height: auto;
+  padding: 0 10px 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342); */
+}
+.hostipleContainer header h5 {
+  font-weight: 900;
+  font-size: 30px;
+}
+.hostipleContainer header img {
+  width: 2rem;
+  height: 2rem;
+}
+.row {
+  width: 20vw;
+}
+
+img {
+  height: 20rem;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 30%;
+}
+
+.flex-item-center {
+  padding: 10px;
+  flex: 30%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 30%;
+}
+.hospitalCards {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hospitalcard {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+  padding: 0px;
+  border-radius: 40px;
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.hospitalcard::-webkit-scrollbar {
+  width: 0;
+}
+.hospitalcard .hospitalcard_header {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+.hospitalcard header .cardImg {
+  height: 35vh;
+  width: 40vw;
+}
+.hospitalcard main {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 10px;
+}
+.hospitalcard .hospitalDitails,
+.hospitalPricingDetails,
+.bookNowContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hospitalcard .hospitalDitails span,
+.hospitalcard .hospitalPricingDetails span,
+.bookNowContainer button {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.151);
+}
+.frontCards {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+
+.frontCardFooter button {
+  color: white;
+}
+.bookNowContainer {
+  height: 3rem;
+  justify-content: space-between;
+}
+.bookNowContainer button {
+  background-color: rgb(12, 192, 12);
+  color: white;
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bookNowContainer button .contactUsLink {
+  font-size: 11px;
+  color: white;
+  margin-left: 0;
+  font-size: 14px;
+}
+@media only screen and (max-width: 650px) {
+  .home {
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-evenly;
+  }
+  .row {
+    width: 90vw;
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .flex-item-left {
+    padding: 0px;
+    flex: 30%;
+  }
+
+  .flex-item-center {
+    padding: 0px;
+    flex: 30%;
+  }
+
+  .flex-item-right {
+    padding: 0px;
+    flex: 30%;
+  }
+  .hospitalCards {
+    justify-content: center;
+  }
+  .hospitalcard header .cardImg {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+.card .card-action {
+  background-color: rgb(250, 249, 252);
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  position: relative;
+  padding: 16px 24px;
+}
+
+.googleMapCointainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.googleMap {
+  height: 150px;
+  width: 300px;
+}
